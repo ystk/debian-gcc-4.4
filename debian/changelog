@@ -1,3 +1,9 @@
+gcc-4.4 (4.4.5-8skerlet2) unstable; urgency=low
+
+  * Fix codename (rules.patch -> rules.defs)
+
+ -- Skerlet Project Team <skerlet@swc.toshiba.co.jp>  Thu, 13 Oct 2011 20:39:22 +0900
+
 gcc-4.4 (4.4.5-8skerlet1) unstable; urgency=low
 
   * Adaptation for Skerlet (rules.patch)
