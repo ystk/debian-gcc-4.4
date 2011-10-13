@@ -10,6 +10,15 @@
 patchdir	?= debian/patches
 series_file	?= $(patchdir)/series
 
+# Workaround for Skerlet
+
+ifeq ($(distribution),Skerlet)
+	distribution = Debian
+endif
+ifeq ($(distrelease),ashitaka)
+	distrelease = squeeze
+endif
+
 # which patches should be applied?
 
 debian_patches = \
