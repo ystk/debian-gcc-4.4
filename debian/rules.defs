@@ -11,6 +11,14 @@ stampdir	= stamps
 distribution	:= $(shell lsb_release -is)
 distrelease	:= $(shell lsb_release -cs)
 
+# Workaround for Skerlet
+ifeq ($(distribution),Skerlet)
+        distribution := Debian
+endif
+ifeq ($(distrelease),ashitaka)
+        distrelease := squeeze
+endif
+
 # On non official archives, "lsb_release -cs" default to "n/a". Assume
 # sid in that case 
 ifeq ($(distrelease),n/a)
