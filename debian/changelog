@@ -1,3 +1,9 @@
+gcc-4.4 (4.4.5-8skerlet4) unstable; urgency=low
+
+  * Fix for fshort-enums
+
+ -- Skerlet Project Team <skerlet@swc.toshiba.co.jp>  Tue, 22 Apr 2014 13:59:55 +0900
+
 gcc-4.4 (4.4.5-8skerlet3) unstable; urgency=low
 
   * Fix version number

@@ -321,6 +321,7 @@ ifeq ($(biarchn32)-$(biarch64),yes-yes)
   endif
 endif
 
+debian_patches += pr43680
 
 series_stamp = $(stampdir)/02-series-stamp
 series: $(series_stamp)
